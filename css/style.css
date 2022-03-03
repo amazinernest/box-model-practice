@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  height: 100px;
+  border: 2px solid black;
+  clear: both;
+}
+
+section {
+  height: 300px;
+  width: 20%;
+  border: 2px solid black;
+  float: left;
+}
+
+.bigone {
+  width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    float: none;
+    width: 100%;
+  }
+
+  .bigone {
+    width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  section {
+    float: none;
+    width: 100%;
+  }
+  .bigone {
+    width: 100%;
+  }
+}
